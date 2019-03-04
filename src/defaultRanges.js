@@ -43,14 +43,14 @@ export function createStaticRanges(ranges) {
 
 export const defaultStaticRanges = createStaticRanges([
   {
-    label: 'Today',
+    label: 'Hoy',
     range: () => ({
       startDate: defineds.startOfToday,
       endDate: defineds.endOfToday,
     }),
   },
   {
-    label: 'Yesterday',
+    label: 'Ayer',
     range: () => ({
       startDate: defineds.startOfYesterday,
       endDate: defineds.endOfYesterday,
@@ -58,28 +58,28 @@ export const defaultStaticRanges = createStaticRanges([
   },
 
   {
-    label: 'This Week',
+    label: 'Esta semana',
     range: () => ({
       startDate: defineds.startOfWeek,
       endDate: defineds.endOfWeek,
     }),
   },
   {
-    label: 'Last Week',
+    label: 'Semana anterior',
     range: () => ({
       startDate: defineds.startOfLastWeek,
       endDate: defineds.endOfLastWeek,
     }),
   },
   {
-    label: 'This Month',
+    label: 'Este mes',
     range: () => ({
       startDate: defineds.startOfMonth,
       endDate: defineds.endOfMonth,
     }),
   },
   {
-    label: 'Last Month',
+    label: 'Mes anterior',
     range: () => ({
       startDate: defineds.startOfLastMonth,
       endDate: defineds.endOfLastMonth,
