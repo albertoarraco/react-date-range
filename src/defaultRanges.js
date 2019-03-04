@@ -89,7 +89,7 @@ export const defaultStaticRanges = createStaticRanges([
 
 export const defaultInputRanges = [
   {
-    label: 'days up to today',
+    label: 'dias hasta hoy',
     range(value) {
       return {
         startDate: addDays(defineds.startOfToday, (Math.max(Number(value), 1) - 1) * -1),
@@ -103,7 +103,7 @@ export const defaultInputRanges = [
     },
   },
   {
-    label: 'days starting today',
+    label: 'dias desde hoy',
     range(value) {
       const today = new Date();
       return {

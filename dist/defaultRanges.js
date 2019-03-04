@@ -131,7 +131,7 @@ var defaultStaticRanges = exports.defaultStaticRanges = createStaticRanges([{
 }]);
 
 var defaultInputRanges = exports.defaultInputRanges = [{
-  label: 'days up to today',
+  label: 'dias hasta hoy',
   range: function range(value) {
     return {
       startDate: (0, _addDays2.default)(defineds.startOfToday, (Math.max(Number(value), 1) - 1) * -1),
@@ -144,7 +144,7 @@ var defaultInputRanges = exports.defaultInputRanges = [{
     return (0, _differenceInCalendarDays2.default)(defineds.endOfToday, range.startDate) + 1;
   }
 }, {
-  label: 'days starting today',
+  label: 'dias desde hoy',
   range: function range(value) {
     var today = new Date();
     return {
